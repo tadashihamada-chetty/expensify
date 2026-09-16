@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="title-bar">
+        <span> <img src="image/542d4fc7-a38d-407b-9bcb-4f35a6df0267.png" alt="logo" class="logo"></span>
+        <span> <img src="image/casual-black-guy-5997659.webp" alt="proile-image" class="profileImage"></span>
+     </div>
+     
+   <div class="right-section">
+    
+    <div class="iconholder">
+    <span class="dashboard">Dashboard 
+ </span>
+ <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />
+</svg>
+ </div>
+
+ <div class="iconholder">
+    <span class="total"> Add Budget 
+</span>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+</div>
+
+<div class="iconholder">
+    <span class="expense"> Add Expense 
+</span>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+</div>
+
+<div class="iconholder">
+    <span class="delete"> Reset 
+</span>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+</svg>
+</div>
+
+
+   </div>
+    
+   <div class="main">
+       <div class="heading">
+        <span> <h4> Total Budget</h4></span>
+        <span> <h4> Balance</h4></span>
+       </div>
+       <div class="total-budget">
+        <div class="totalbudgetin"></div>
+        <div class="totalbalance"></div>
+     </div>
+
+       <div class="dashboard">
+
+        <div class="firstholder">
+          <div class="totalnumber-Expense"></div>
+         <div class="total-days"></div>
+         </div>
+        </div>
+
+        <div class="secoundHolder">
+        <div class="food"></div>
+        <div class="transport"></div>
+        <div class="bills"></div>
+        </div>
+
+         <div class="thirdHolder">
+        <div class="shopping"></div>
+        <div class="other"></div>
+        </div>
+       </div>
+</div>    
+
+    
+<div class="side-section">
+    <div class="history-header"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+</svg>  <span>Your transaction history</span> 
+</div>
+     <div class="historyDisplay"></div>      
+ </div>
+         <div class="modal-one">
+       <div class="form-for-budget">
+                <label for="amount filed">Total Amount</label>
+                <form id="budget-Form">
+            <button class="close-button"> &times;</button>
+             <input type="number" name="total-budget" id="amount" placeholder="enter total budget eg. 1000">
+             <label for="period"> Expenditure period</label>
+             <input type="number" name="Duration" placeholder="Number of days" id="period">
+             <button type="submit" class="submit-Button"> Confirm budget</button>
+                 </form>
+         </div>
+                 </div>
+
+                <div class="modal-two">
+         
+                  <div class="expnese">
+             <form id="expense-form">
+                     <button type="button" class="close-button-two"> &times;</button>
+                
+                <label for="amount"> Amount</label>
+                <input type="number" placeholder=" enter amount" id="amount">
+                <label for="category"> Category </label>
+                <select name="option" id="category-option">
+                    <option value="">Select category</option>
+                        <option value="food">Food</option>
+                        <option value="transport">Transport</option>
+                        <option value="bills">Bills</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="other">Other</option>
+                </select>
+                
+                <button type="submit" class="submit-Button">
+                  comfirm
+                </button>
+            </form>
+            
+         </div>
+         </div>
+<script src="script.js"></script>
+</body>
+</html>
