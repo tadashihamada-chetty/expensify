@@ -198,7 +198,7 @@ if(!array){
   historyDisplay.innerHTML=`No history `
 }else{
   historyDisplay.innerHTML= array.map(doc=>`<div class="historyDataHolder">
-   <span>${doc.type} </span>
+   <span>${doc.type} </span>       
    <span> Ghc ${doc.amount}  </span>
    <span> ${doc.date} </span>
     </div>
