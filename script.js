@@ -141,15 +141,13 @@ if(saved){
 
 
 
-
-
-
 function handleTotalSpent(array, target,text,term){
   if(!array ){
     return
   }
 const filterData = array.filter(item=> item.type===term);
 const amountData= filterData.map(item => item.amount)
+
 if(amountData.length ===0){
   return
 }else{
@@ -158,17 +156,15 @@ if(amountData.length ===0){
 } ,0)
 
 target.innerHTML=`
-
+    <div class="totalsHolder">
    <span class="inner-text"> ${text} </span>
-   <span class="inner-text">${totalspent} </span>
+   <span class="inner-number"> GhC: ${totalspent} </span>
+   </div>
    `
 
 }
 
 }
-
-
-
 
 
 function addToData(object){
