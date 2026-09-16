@@ -21,8 +21,6 @@ const  totalSpentOther = document.querySelector(".other")
 const DataArray=[];
 let number1=0;
 let number2=0;
-let total= 0;
-let Num=0;
 let ballance =0;
 
 
@@ -123,8 +121,6 @@ handleBalanceDispaly();
 
 
 }
-
-
 
 handleBalanceDispaly();
 
